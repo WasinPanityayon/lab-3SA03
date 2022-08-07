@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import WordCard from './WordCard';
 
+const word = "Hello";
 function App() {
   return (
     <div>
-      Hello world
+      {
+        <WordCard value={word}/>
+      }
     </div>
   );
 }
