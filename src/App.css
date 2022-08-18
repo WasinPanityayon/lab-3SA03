@@ -1,14 +1,80 @@
-.card {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #F0E4D7;
+ }
+
+ .main {
+  width: 430px;
+  height: 380px;
+  background: #F6F5F0;
+  border-radius: 10px;
+ }
+
+ .main h1 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ccc;
+ }
+
+ .main .content {
+  margin: 25px 25px 35px;
+ }
+
+ .content .word {
+  display: flex;
+  flex-wrap: warp;
+  justify-content: center;
+ }
+
+ .card {
   display: inline-block;
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  font-size: 36px;
+  font-weight: 450;
   text-align: center;
-  width: 3em;
-  font-size: 2em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 1em;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
   user-select: none;
+ }
+
+ .card:first-child {
+  margin-left: 0px;
  }
 
  .activeCard {
   color: red;
   background: pink;
+ }
+
+ .content .details {
+  margin: 20px 0 40px;
+ }
+
+ .details p {
+  font-size: 19px;
+  margin-bottom: 10px ;
+ }
+
+ .content .reset-btn{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 17px sol;
+  padding: 15px 145px;
+  background: #2A505A;
+  border-radius: 5px;
  }
