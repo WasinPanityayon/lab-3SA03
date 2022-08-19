@@ -20,6 +20,7 @@ export default function WordCard(props) {
     const [state, setState] = useState(prepareStateFromWord(props.value))
 
     const Refresh = () =>{ window.location.reload(); }
+    const Answer = () =>{alert(`Anwser is "${props.value}"`); }
     const activationHandler = (c) => {
         console.log(`${c} has been activated.`)
 
@@ -36,7 +37,7 @@ export default function WordCard(props) {
                 console.log('reset, next attempt')
                 setState({...state, guess: '',attempt: state.attempt - 1})
                 if (state.attempt === 1) {
-                    alert(`Game over! You don't have remaining guesses`)
+                    alert("Game over! You don't have remaining guesses")
                     state.attempt = 10
                     window.location.reload();
                 }
@@ -65,6 +66,7 @@ export default function WordCard(props) {
                     </p>
                 </div>
                 <botton className='reset-btn' onClick={Refresh}>Reset game</botton>
+                <botton className='reset-btn' onClick={Answer}>Answer</botton>
             </div>
         </div>
     )
