@@ -14,7 +14,7 @@
 
  .main {
   width: 430px;
-  height: 380px;
+  height: 400px;
   background: #F6F5F0;
   border-radius: 10px;
  }
@@ -49,14 +49,27 @@
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
   user-select: none;
  }
+ .card2 {
+  display: inline-block;
+  height: 47px;
+  width: 200px;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 450;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+  user-select: none;
+ }
 
  .card:first-child {
   margin-left: 0px;
  }
 
  .activeCard {
-  color: red;
-  background: pink;
+  color: #293242;
+  background: #BEABA7;
  }
 
  .content .details {

@@ -58,7 +58,11 @@ export default function WordCard(props) {
                 <div className='details'>
                     <p className='hint'>Hint: <span>{props.hint}</span></p>
                     <p className='guess'>Remaining Guess: <span>{state.attempt}</span></p>
-                    
+                    <p className='yourcard'>your card select: 
+                        <span className='card2'>
+                            "{state.guess}"
+                        </span>
+                    </p>
                 </div>
                 <botton className='reset-btn' onClick={Refresh}>Reset game</botton>
             </div>
