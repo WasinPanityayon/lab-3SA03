@@ -29,22 +29,10 @@ var random = Math.floor(Math.random()*words.length);
 var word = words[random];
 var hint = hints[random];
 
+
 function App() {
   return (
-    <div className='main'>
-      <h1>Guess the Word</h1>
-      <div className='content'>
-        <div className='word'>
-          <WordCard value={word}/>
-        </div>
-        <div className='details'>
-          <p className='hint'>Hint: <span>{hint}</span></p>
-          <p className='guess'>Remaining Guess: <span>10</span></p>
-          <p className='wrong'>Wrong letters: a, b, c</p>
-        </div>
-        <botton className='reset-btn'>Reset game</botton>
-      </div>
-    </div>
+    <WordCard value={word} hint={hint}/>
   );
 }
 

@@ -15,6 +15,7 @@ export default function CharacterCard(props) {
         if(attemptRef.current !== props.attempt){
             setActive(false);
             attemptRef.current = props.attempt
+            console.log(attemptRef.current)
             
         }
     })
